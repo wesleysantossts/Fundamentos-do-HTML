@@ -111,84 +111,85 @@
 <h4 style="color: blue;">Assim deixo o conteúdo do texto da cor que eu quiser.</h4><br>
 <p style="color: tomato;">Assim, também, deixo o texto da cor que eu quiser.</p>
 
+<!--
+    <!-- CSS Internal - CSS na seção head do código -->
 
-<!-- CSS Internal - CSS na seção head do código -->
-
-# Desta forma colocamos em todos os elementos da página os estilos desejados.
-Na seção head o html vai semm o elemento 'style', só sendo necessário designar o que se quer mudar e colocar os atributos entre colchetes. 
-
-
-#head 
-body {
-    background-color: powderblue;
-}
-h1 {
-    color: blue;
-}
-p {
-    color: red;
-}
-#/head 
+    # Desta forma colocamos em todos os elementos da página os estilos desejados.
+    Na seção head o html vai semm o elemento 'style', só sendo necessário designar o que se quer mudar e colocar os atributos entre colchetes. 
 
 
-<!-- CSS External - Estilo externo de CSS -->
-
-# O código vai na seção HEAD e busca de uma fonte externa o estilo desejado. O código externo de CSS pode ser escrito em qualquer editor de texto. O arquivo não precisa conter nenhum código html, apenas deve ser salvo como uma extensão css: '.css'.
-Com uma CSS External você consegue mudar o visual de um website inteiro, apenas mudando um arquivo. 
-
-#head 
-< link rel = "stylesheet" href = "styles.css" > 
-#/head
-
-- obs: coloquei o código com espaçamentos para ele não ser ativado aqui.
-
-
-# No arquivo externo, os estilos desejados deveram ser codificados com o elemento seguido dos atributos, conforme a seguir:
-
-#'styles.css'
-body {
-    background-color : blue;
-}
-
-h1 {
-    color : tomato;
-}
-
-p {
-    color : red;
-}
-
-- obs: coloquei o código com espaçamentos para ele não ser ativado aqui.
+    #head 
+    body {
+        background-color: powderblue;
+    }
+    h1 {
+        color: blue;
+    }
+    p {
+        color: red;
+    }
+    #/head 
 
 
-<!-- CSS - Preenchimento, Margem e Linkagem externa -->
+    <!-- CSS External - Estilo externo de CSS -->
 
-# preenchimento do texto
-p {
-    border: 2px solid powerblue;
-    padding: 30px; 
-}
+    # O código vai na seção HEAD e busca de uma fonte externa o estilo desejado. O código externo de CSS pode ser escrito em qualquer editor de texto. O arquivo não precisa conter nenhum código html, apenas deve ser salvo como uma extensão css: '.css'.
+    Com uma CSS External você consegue mudar o visual de um website inteiro, apenas mudando um arquivo. 
 
-# margem - espaço entre as bordas do texto
-p {
-    border: 2px solid tomato;
-    margin: 50px;
-}
+    #head 
+    < link rel = "stylesheet" href = "styles.css" > 
+    #/head
 
-# link para o CSS External 
-* existem 3 formas:
-- 1: usar um link de uma URL que contenha o arquivo CSS.
+    - obs: coloquei o código com espaçamentos para ele não ser ativado aqui.
 
-< link rel="stylesheet" href="https://www.meusite.com.br/html/styles.css" >
 
-- 2: usar um link (neste caso, caminho da pasta) que contenha, na pasta do html do website atual, o arquivo em css.
+    # No arquivo externo, os estilos desejados deveram ser codificados com o elemento seguido dos atributos, conforme a seguir:
 
-< link rel="stylesheet" href="/html/styles.css"
+    #'styles.css'
+    body {
+        background-color : blue;
+    }
 
-*neste caso, se não tivermos a pasta e quisermos criar uma com os estilos do zero (no VSCode), basta pressionar CTRL e clicar sobre o caminho que especificamos, o sistema criará uma nova pasta e abrirá em uma outra aba para você realizar as alterações necessárias.
+    h1 {
+        color : tomato;
+    }
 
-- 3: usar um link (neste caso, caminho da pasta) de um arquivo na mesma pasta da atual página.
-< link ref="stylesheet" href="styeles.css"
+    p {
+        color : red;
+    }
+
+    - obs: coloquei o código com espaçamentos para ele não ser ativado aqui.
+
+
+    <!-- CSS - Preenchimento, Margem e Linkagem externa -->
+
+    # preenchimento do texto
+    p {
+        border: 2px solid powerblue;
+        padding: 30px; 
+    }
+
+    # margem - espaço entre as bordas do texto
+    p {
+        border: 2px solid tomato;
+        margin: 50px;
+    }
+
+    # link para o CSS External 
+    * existem 3 formas:
+    - 1: usar um link de uma URL que contenha o arquivo CSS.
+
+    < link rel="stylesheet" href="https://www.meusite.com.br/html/styles.css" >
+
+    - 2: usar um link (neste caso, caminho da pasta) que contenha, na pasta do html do website atual, o arquivo em css.
+
+    < link rel="stylesheet" href="/html/styles.css"
+
+    *neste caso, se não tivermos a pasta e quisermos criar uma com os estilos do zero (no VSCode), basta pressionar CTRL e clicar sobre o caminho que especificamos, o sistema criará uma nova pasta e abrirá em uma outra aba para você realizar as alterações necessárias.
+
+    - 3: usar um link (neste caso, caminho da pasta) de um arquivo na mesma pasta da atual página.
+    < link ref="stylesheet" href="styeles.css" 
+-->
 
 
 <!-- HTML links -->
